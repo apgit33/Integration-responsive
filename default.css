@@ -61,6 +61,7 @@
     --color-main : #554D89;
     --color-secondary : #5B5766;
     --color-third : white;
+    --color-four : #716C80;
 
     --font-principale : 'nunito-regular';
     --font-principale-black : 'nunito-black';
@@ -78,6 +79,7 @@ body {
     font-family: var(--font-principale);
     font-size: 1rem;
     color: var(--color-secondary);
+    overflow-x: hidden;
 }
 .d-flex {display: flex;justify-content: space-between;}
 .column{flex-direction: column;}
@@ -105,6 +107,9 @@ a{text-decoration: none;}
 }
 
 /* Début Logo navbar search */
+.header-principal, body>section{
+    margin: auto;
+}
 #top-header {
     align-items: center;
     padding-top: 0.625rem;
@@ -163,6 +168,7 @@ a{text-decoration: none;}
 #intro {
     max-width: 27.25rem;
     margin-top: 17.5rem;
+    margin-bottom: 20.625rem;
     position: relative;
 
 }
@@ -211,5 +217,76 @@ h2 {
     position: absolute;
     top:-785px;
     right:-1060px;
-    z-index:-1;
+    z-index:-2;
+ 
+}
+
+
+/* Début section offres  */
+#offres h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+.option {
+    width: 31.58%;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 1.25rem 0 #E1E4ED;
+}
+.mini-container {
+    width: 64%;
+    margin: 60px auto;
+}
+.best {
+    display: block;
+    width: 5.375rem;
+    height: 1.625rem;
+    border-radius: 0.8125rem;
+    float: right;
+    background-color: rgba(225, 228, 237, 0.60);
+    color: #EF7171;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    letter-spacing: 0.0187rem;
+    font-family: var(--font-secondary-bold);
+    text-align: center;
+    line-height: 1.625rem;
+    margin-top: 1rem;
+
+}
+#offres hr {
+    width: 2.5rem;
+    height: 0.125rem;
+    margin: 0;
+    background-color: #BA43FC;
+    border: none;
+}
+
+.price {
+    font-family: var(--font-secondary-bold);
+    font-size: 3.125rem;
+    color: var(--color-main);
+    margin-top: 0.9375rem;
+    margin-bottom: 0;
+}
+
+.time {
+    color: rgba(91, 87, 102, 0.8);
+    margin-top: 0;
+}
+
+#offres .button-general {
+    width: 11.8125rem;
+}
+.liste-options {
+    margin-top: 40px;
+    padding-left: 1.875rem;
+    margin-bottom: 50px;
+}
+.liste-options li a{
+    color: var(--color-four);
+    font-size: 1.125rem;
+    line-height: 36px;
+}
+.non {
+    opacity: 80%;
 }
