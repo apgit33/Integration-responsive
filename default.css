@@ -48,3 +48,77 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+/* Variables générales */
+:root {
+    --color-main : #554D89;
+    --color-secondary : #5B5766;
+    --color-third : white;
+
+    --font-principale : 'nunito-regular';
+    --font-principale-black : 'nunito-black';
+    --font-principale-bold : 'nunito-bold';
+
+    --font-secondary : 'poppins-regular';
+}
+
+/* Classes générales */
+body {margin: 0;}
+.d-flex {display: flex;justify-content: space-between;}
+.column{flex-direction: column;}
+li{list-style: none;}
+a{text-decoration: none;}
+.container {max-width: 71.25rem; margin: auto;}
+
+/* Début Logo navbar search */
+#top-header {
+    align-items: center;
+    padding-top: 0.625rem;
+}
+
+.logo {
+    font-family: var(--font-principale-black);
+    font-size: 1rem;
+    letter-spacing: 0.0938rem;
+    text-transform: uppercase;
+    color: var(--color-main);
+    align-self: center;
+    margin-left: 0.9375rem;
+}
+
+/* taille et marge barre de navigation + recherche */
+.navbar-search { 
+    width: 87.5%;
+    margin-top: 0.625rem;
+}
+
+/* Menu */
+.menu {
+    width: 45%;
+}
+.menu a {
+    font-family: var(--font-principale);
+    font-size: 1rem;
+    color: var(--color-secondary);
+}
+
+.menu a:hover {
+    font-family: var(--font-principale-bold);
+    font-size: 1.0625rem;
+    color: var(--color-main);
+}
+
+/* Barre de recherche */
+.search-bar {
+    width: 23.125rem;
+    height: 2.5rem;
+    border: 1px solid #D5D5D5;
+    border-radius: 1.5625rem;
+}
+.search {
+    margin-left: 5%;
+    font-family: var(--font-principale);
+    font-size: 1rem;
+    color: rgba(91, 87, 102, 0.8);
+}
+.img {align-self: center;margin-right: 5%;}
