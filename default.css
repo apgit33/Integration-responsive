@@ -80,6 +80,7 @@ body {
     font-size: 1rem;
     color: var(--color-secondary);
     overflow-x: hidden;
+    z-index: -1;
 }
 .d-flex {display: flex;justify-content: space-between;}
 .column{flex-direction: column;}
@@ -110,6 +111,7 @@ a{text-decoration: none;}
 .header-principal, body>section{
     margin: auto;
 }
+
 #top-header {
     align-items: center;
     padding-top: 0.625rem;
@@ -150,7 +152,7 @@ a{text-decoration: none;}
 .search-bar {
     width: 23.125rem;
     height: 2.5rem;
-    border: 1px solid #D5D5D5;
+    border: 0.0625rem solid #D5D5D5;
     border-radius: 1.5625rem;
 }
 .search {
@@ -162,15 +164,13 @@ a{text-decoration: none;}
     align-self: center;
     margin-right: 5%;
 }
-.search-bar img {margin-top: 5px;}
+.search-bar img {margin-top: 0.3125rem;}
 
 /* 1ere section "Our Prices" */
 #intro {
-    max-width: 27.25rem;
+    /* max-width: 27.25rem; */
     margin-top: 17.5rem;
     margin-bottom: 20.625rem;
-    position: relative;
-
 }
 
 h2 {
@@ -182,6 +182,7 @@ h2 {
 
 .intro-text {
     font-size: 1.375rem;
+    width: 37%;
 }
 
 .button-general {
@@ -207,22 +208,35 @@ h2 {
     justify-content: flex-start;
 }
 
-#intro::before {
-    width: 673px;
-    height: 1369px;
+.test3{
+    /* background-color: red; */
+}
+.test2 {
+    /* background-color: rebeccapurple; */
+    position: relative;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: auto;
+
+}
+.test2::before {
+    width: 42.0625rem;
+    height: 85.5625rem;
     content:'';
     transform: rotate(44deg);
-    border-radius: 336.5px;
+    border-radius: 21.0313rem;
     background-color: #6852ED;
     position: absolute;
-    top:-785px;
-    right:-1060px;
+    top: -28.062rem;
+    right: -0.25rem;
     z-index:-2;
- 
 }
 
 
 /* Début section offres  */
+#offres {
+    margin-bottom: 7.5rem;
+}
 #offres h2 {
     font-size: 1.25rem;
     margin-bottom: 0;
@@ -234,7 +248,7 @@ h2 {
 }
 .mini-container {
     width: 64%;
-    margin: 60px auto;
+    margin: 3.75rem auto;
 }
 .best {
     display: block;
@@ -278,15 +292,85 @@ h2 {
     width: 11.8125rem;
 }
 .liste-options {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     padding-left: 1.875rem;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 .liste-options li a{
     color: var(--color-four);
     font-size: 1.125rem;
-    line-height: 36px;
+    line-height: 2.25rem;
 }
 .non {
     opacity: 80%;
+}
+
+/* Début section testimonial */
+.test {
+    background-color: rgba(225, 228, 237, 0.3);
+
+}
+#testimonial {
+    position: relative;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: auto;
+}
+
+#testimonial::before {
+    width: 15.0625rem;
+    height: 15.0625rem;
+    content:url('images/tete.png');
+    border-radius: 15.0625rem;
+    background-color: hsla(225, 25%, 91%, 0.3);
+    position: absolute;
+    bottom:-0.625rem;
+    left: -55px;
+    opacity: 30%;
+}
+#testimonial::after {
+    width: 360px;
+    height: 900px;
+    content:url('images/corps.png');
+    border-radius: 180px;
+    position: absolute;
+    bottom: 113px;
+    right: 540px;
+    z-index:-2;
+    opacity: 30%;
+}
+
+#review {
+    width: 46.875rem;
+    text-align: center;
+    padding-top: 6.25rem;
+}
+#review h2 {
+    font-size: 2.125rem;
+    margin-bottom: 0rem;
+}
+.review-text {
+    margin-top: 0.625rem;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0.875rem;
+}
+.circle {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 6.25rem;
+    background-color: #6852ED;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.author {
+    font-family: var(--font-secondary-bold);
+    font-size: 1.25rem;
+    font-style: normal;
+    color: var(--color-main);
+}
+.job {
+    color: var(--color-secondary);
+    opacity: 80%;
+    margin-bottom: 4.6875rem;
 }
