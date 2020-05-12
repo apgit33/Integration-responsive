@@ -108,7 +108,7 @@ a{text-decoration: none;}
 }
 
 /* Début Logo navbar search */
-.header-principal, body>section{
+.header-principal{
     margin: auto;
 }
 
@@ -168,9 +168,10 @@ a{text-decoration: none;}
 
 /* 1ere section "Our Prices" */
 #intro {
-    /* max-width: 27.25rem; */
-    margin-top: 17.5rem;
+    max-width: 27.25rem;
+    margin-top: 250px;
     margin-bottom: 20.625rem;
+    position: relative;
 }
 
 h2 {
@@ -182,7 +183,6 @@ h2 {
 
 .intro-text {
     font-size: 1.375rem;
-    width: 37%;
 }
 
 .button-general {
@@ -208,18 +208,7 @@ h2 {
     justify-content: flex-start;
 }
 
-.test3{
-    /* background-color: red; */
-}
-.test2 {
-    /* background-color: rebeccapurple; */
-    position: relative;
-    overflow: hidden;
-    max-width: 1920px;
-    margin: auto;
-
-}
-.test2::before {
+#intro::before {
     width: 42.0625rem;
     height: 85.5625rem;
     content:'';
@@ -227,8 +216,8 @@ h2 {
     border-radius: 21.0313rem;
     background-color: #6852ED;
     position: absolute;
-    top: -28.062rem;
-    right: -0.25rem;
+    top: -48.062rem;
+    right: -67.25rem;
     z-index:-2;
 }
 
@@ -306,10 +295,10 @@ h2 {
 }
 
 /* Début section testimonial */
-.test {
+.bandereau {
     background-color: rgba(225, 228, 237, 0.3);
-
 }
+
 #testimonial {
     position: relative;
     overflow: hidden;
