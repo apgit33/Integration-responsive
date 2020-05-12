@@ -210,7 +210,7 @@ h2 {
     color: var(--color-main);
     margin-left: 1.875rem;
 }
-#intro div {
+#intro div, .community-service div{
     justify-content: flex-start;
 }
 
@@ -409,8 +409,8 @@ h2 {
     margin-bottom: 1.5625rem;
     box-shadow: 0 0 1.25rem 0 #E1E4ED;
     border-radius: 0.625rem;
-    padding-left: 30px;
-    padding-bottom: 20px;
+    padding-left: 1.875rem;
+    padding-bottom: 1.25rem;
 }
 .service-secondary section h3 {
     color: var(--color-main);
@@ -421,7 +421,7 @@ h2 {
 }
 
 .audit {
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
  .service-secondary section:hover {
     background: var(--bck-gradient);
@@ -433,4 +433,34 @@ h2 {
 
 .sec-text {
     width: 85%;
+}
+
+/* Début community */
+#community {
+    margin: 7.5rem auto;
+}
+.photo {
+    width: 40.6875rem;
+    height: 29.625rem;
+    border-radius: 14.4881rem 14.4881rem 14.4881rem 5.18rem;
+    background-color: #E1E4ED;
+    background-image: url('images/community.png');
+}
+.community-service {
+    width: 36.5%;
+    align-self: center;
+}
+.community-service h2 {
+    font-size: 2.125rem;
+    line-height: 2.75rem;
+}
+
+.community-service .button-general {
+    width: 10.375rem;
+}
+
+.community-text {
+    color: var(--color-four);
+    margin-bottom: 1.875rem;
+    line-height: 1.6875rem;
 }
