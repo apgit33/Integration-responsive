@@ -83,34 +83,22 @@ body {
     font-size: 1rem;
     color: var(--color-secondary);
     overflow-x: hidden;
-    /* z-index: -1; */
 }
 .d-flex {display: flex;justify-content: space-between;}
 .column{flex-direction: column;}
 li{list-style: none;}
 a{text-decoration: none;}
 .container {width:100%;max-width: 71.25rem; margin: auto;}
-address {
-    font-style: normal;
-}
+address {font-style: normal;}
 
 /* Material-icons gère les symboles correspondant */
 .material-icons {
     font-family: 'Material Icons';
     font-size: 1.5rem;  /* Preferred icon size*/
-
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
+      /* Support for IE. */
     font-feature-settings: 'liga';
-    /* align-self: center; */
-
 }
 
 /* Début Logo navbar search */
@@ -147,7 +135,7 @@ address {
     font-family: var(--font-principale);
     color: var(--color-secondary);
 }
-
+.menu li:first-child {display: none;}
 .menu a:hover {
     font-family: var(--font-principale-bold);
     font-size: 1.0625rem;
@@ -449,7 +437,7 @@ h2 {
 .photo {
     width: 40.6875rem;
     height: 29.625rem;
-    border-radius: 14.4881rem 14.4881rem 14.4881rem 5.18rem;
+    border-radius: 14.8125rem 14.8125rem 14.8125rem 5rem;
     background-color: #E1E4ED;
     background: url('images/community.png') no-repeat;
 }
@@ -481,7 +469,7 @@ h2 {
 .newsletter div {
     height: 6.875rem;
 }
-#mail {
+#mail, #mail2 {
     background: transparent;
     border: none;
     margin-left: 5rem;
@@ -490,6 +478,7 @@ h2 {
     color: var(--color-third);
     opacity: 70%;
 }
+.media {display: none;}
 .button-email {
     align-self: center;
     background: transparent;
@@ -602,7 +591,7 @@ h2 {
         right: -51.25rem;
         opacity: 50%;
     }
-
+    .service-hover {display: block;}
     #offres {flex-direction: column;}
     .option {
         width: 50%;
@@ -672,8 +661,8 @@ h2 {
 
     #review {width: 90%;}
 
-    .wrap-mobile {flex-wrap: wrap;}
-    .sec {margin: 1.25rem auto 0;}
+    .sec {margin: 1.25rem auto 0;
+    flex-direction: column;}
     .service-secondary section{
         box-sizing: border-box;
         width: 100%;
@@ -697,5 +686,20 @@ h2 {
 }
 
 @media screen and (max-width:29.9988rem){ 
+    .wrap-mobile {flex-wrap: wrap;}
+    #top-header {flex-direction: row;}
+    .menu li:first-child {display: block;margin-right: 1.875rem;}
+    .search-bar, .menu li:not(:first-child) {display: none;}
+
+    .menu ul {justify-content: flex-end;}
+    .column-mobile {flex-direction: column;}
+    .intro-lien {margin: 0;}
+
+    .option, .sec, .footer-about-info, .link-mobile {width: 100%;}
+
+    .service-principal{width: 90%;}
+    .link-mobile{width: 90%;}
     
+    .media {display: block;}
+    .none {display: none;}
 }

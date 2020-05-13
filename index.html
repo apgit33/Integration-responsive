@@ -16,6 +16,7 @@
                 <div class="navbar-search d-flex">
                     <nav class="menu">
                         <ul class="d-flex">
+                            <li><a href="#">Menu</a></li>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Pages</a></li>
                             <li><a href="#">Services</a></li>
@@ -33,7 +34,7 @@
             <section id="intro">
                 <h2>Our Prices</h2>
                 <p class="intro-text">We help company set up business strategy including design brand identiy or product design service.</p>
-                <div class="d-flex">
+                <div class="d-flex column-mobile">
                     <p><a href="#" class="button-general">Free consultation</a></p>
                     <p><a href="#" class="intro-lien">View projects</a></p>
                 </div>
@@ -168,7 +169,7 @@
                         <h2>We serve fine services in creative community</h2>
                     </header>
                     <p class="community-text">Commodo nulla facilisi nullam vehicula ipsum sociis. Faucibus scelerisque eleifend donec pretium necud vulputate sapien nec, elit eget gravida cum. </p>
-                    <div class="d-flex">
+                    <div class="d-flex wrap-mobile">
                         <p><a href="#" class="button-general">Be One of Us</a></p>
                         <p><a href="#" class="intro-lien">Support projects</a></p>
                     </div>
@@ -186,7 +187,8 @@
                 <form action="/ma-page-de-traitement" method="post">
                         <label for="mail"></label>
                         <div class="d-flex">
-                            <input type="email" id="mail" name="user_mail" placeholder="Subscribe to our newsletters" required>
+                            <input type="email" id="mail" name="user_mail" placeholder="Subscribe to our newsletters" required class="none">
+                            <input type="email" id="mail2" name="user_mail" placeholder="Subscribe" required class="media">
                             <button type="submit" class="button-email">Send</button>
                         </div>
                 </form>
@@ -238,6 +240,5 @@
 
             <p class="credit">© 2019 <span class="template">Elipso Sketch Template</span> by <span class="name">merkulove</span></p>
         </footer>
-        <div style="height: 999999px;"></div>
     </body>
 </html>
