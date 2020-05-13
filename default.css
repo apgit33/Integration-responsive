@@ -423,7 +423,9 @@ h2 {
     padding-top: 5.1875rem;
     font-weight: 100;
 }
-
+.service-secondary a {
+    color: var(--color-four);
+}
 .audit {
     margin-top: 2.5rem;
 }
@@ -431,10 +433,11 @@ h2 {
     background: var(--bck-gradient);
     box-shadow:0 0 1.25rem 0 rgba(105, 82, 237, 0.80);
 } 
-.service-secondary section:hover h3,.service-secondary section:hover .sec-text {
+.service-secondary section:hover h3,.service-secondary section:hover .sec-text, .service-secondary section:hover a{
     color: var(--color-third);
 }
-
+.service-secondary section:hover .service-hover {display: block;}
+.service-hover {display: none;}
 .sec-text {
     width: 85%;
 }
@@ -510,12 +513,12 @@ h2 {
     margin-top: 5rem;
     font-size: 1.125rem;
 }
-.middle h3 {
+.middle h2 {
     font-family: var(--font-secondary-bold);
     font-size: 1.25rem;
     color: var(--color-main);
     font-weight: 100;
-    margin-top: 1.4375rem;
+    margin-top: 0.5625rem;
 }
 .about {
     width: 32%;
@@ -523,7 +526,7 @@ h2 {
 .footer-intro {
     color: var(--color-four);
     line-height: 1.6875rem;
-    margin: 0;
+    margin-top: 0.625rem;
 }
 
 /* Contact info */
@@ -531,11 +534,11 @@ h2 {
     width: 25%;
 }
 .contact ul {
-    margin-top: 30px;
+    margin-top: 1.3125rem;
 }
 
 .contact li {
-    line-height: 30px;
+    line-height: 1.875rem;
     margin-top: 0.3125rem;
     color: var(--color-four);
 }
@@ -551,7 +554,7 @@ h2 {
     flex-direction: column;
     width: 68%;
     padding-left: 0;
-    margin-top: 11px;
+    margin-top: 0.5rem;
 }
 .link-sec {
     justify-content: flex-start;
@@ -574,7 +577,7 @@ h2 {
     font-size: 0.875rem;
     font-family: var(--font-secondary);
     letter-spacing: 0.0089rem;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 .template {
     font-family: var(--font-secondary-bold);
@@ -590,39 +593,30 @@ h2 {
 /* Début médias queries */
 
 @media only screen and (max-width :73.6875rem) {
-    .menu {
-        width: 60%;
-    }
-    .search-bar {
-        width: 30%;
-    }
-    
-    #intro {
-        margin: 9.375rem auto 18.75rem;
-    } 
+    .menu {width: 60%;}
+    .search-bar {width: 30%;}
+    #intro {margin: 9.375rem auto 18.75rem;} 
 
     #intro::before {
-        top: -52.062rem;
+        top: -48.062rem;
         right: -51.25rem;
-        opacity: 70%;
+        opacity: 50%;
     }
 
-
-    #offres {
-        flex-direction: column;
-    }
+    #offres {flex-direction: column;}
     .option {
         width: 50%;
         margin:0 auto 3.125rem;
     }
-
-
-
+    .about {margin-left: 1.875rem;}
+    .credit {text-align: center;}
 }
+
 
 
 @media  screen and (max-width:61.9931rem) {
     #offres {margin-bottom: 3.125rem;}
+    .option {width: 60%;}
     #testimonial::before, .photo {
         display: none;
     }
@@ -633,14 +627,10 @@ h2 {
         text-align: center;
     }
     .button-general{margin: auto;}
-    .sec {
-        margin: auto;
-    }
-    .audit {
-        margin-top: 0;
-    }
+    .sec {margin: auto;}
+    .audit {margin-top: 0;}
     .sec-text{width: 76%;}
-    /* service  */
+
     #community {margin-top: 1.875rem;margin-bottom: 3.75rem;}
     .community-service {
         width: 80%;
@@ -650,34 +640,62 @@ h2 {
     .community-service div {justify-content: center;}
 
     #mail {width: 60%;}
-
     .middle {margin-top: 1.875rem;}
-    .wrap-mobile {flex-wrap: wrap;}
+    .wrap-tablette {flex-wrap: wrap;}
+    .about{width: 100%;}
+
     .footer-about-info {
-        width: 55%;
+        width: 50%;
         margin: auto;
     }
 
     .contact,.link {
-        width: 50%;
-        margin-top: 3.125rem;
+        width: 40%;
+        margin: 3.125rem auto 0;
     }
-    .contact div {
+}
+
+
+@media screen and (max-width:47.9988rem) {
+
+    #top-header, .navbar-search {flex-direction: column;}
+    .menu ul {padding-left: 0;}
+    .menu {width: 100%;}
+    .menu a:hover {border: none;}
+    .search-bar {align-self: center;margin-top: 1.25rem;}
+    #intro::before{right: -42.75rem;top: -55.062rem;}
+    #intro{
+        text-align: center;
+        margin: 5.375rem auto 7.75rem;
+    }
+    #intro div {justify-content: center;}
+
+    #review {width: 90%;}
+
+    .wrap-mobile {flex-wrap: wrap;}
+    .sec {margin: 1.25rem auto 0;}
+    .service-secondary section{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .audit h3{margin-top: 0;}
+    #mail {margin-left: 3.125rem;}
+
+    .contact, .link h2{
+        width: 100%;
+        text-align: center;
+    }
+    .contact ul {padding-left: 0;}
+
+    .link {width: 100%;}
+
+    .link-mobile {
         width: 60%;
         margin: auto;
     }
-    .contact ul {padding-left: 0;}
-    .link ul{width: 71%;}
-    .credit {text-align: center;margin-top: 3.125rem;}
+    .link-sec a{padding-left: 5rem;}
 }
 
-
-@media screen and (max-width:767.9808px) {
-    #mail {margin-left: 50px;}
-
-}
-
-
-@media screen and (max-width:479.9808px){ 
+@media screen and (max-width:29.9988rem){ 
     
-    }
+}
