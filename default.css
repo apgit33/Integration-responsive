@@ -623,13 +623,7 @@ Début media queries
     .menu {width: 60%;}
     .search-bar {width: 30%;}
     #intro {margin: 9.375rem auto 18.75rem;} 
-
-    #intro::before {
-        /* top: -48.062rem;
-        right: -51.25rem;
-        opacity: 50%; */
-        content: none;
-    }
+    #intro::before {content: none;}
     .service-hover {display: block;}
     #offres {flex-direction: column;}
     .option {
@@ -691,7 +685,7 @@ Début media queries
     .menu {width: 100%;}
     .menu a:hover {border: none;}
     .search-bar {align-self: center;margin-top: 1.25rem;}
-    /* #intro::before{right: -42.75rem;top: -55.062rem;} */
+
     #intro{
         text-align: center;
         margin: 5.375rem auto 7.75rem;
