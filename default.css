@@ -81,8 +81,8 @@
     --font-secondary-med : 'poppins-medium';
     --font-secondary-meditalic : 'poppins-mediumitalic';
 
-    --size-16 : 1rem;
-    --size-18 : 1.125rem;
+    --size-16 : 16px;
+    --size-18 : 18px;
 }
 
 /* Classes générales */
@@ -97,13 +97,13 @@ body {
 .column{flex-direction: column;}
 li{list-style: none;}
 a{text-decoration: none;}
-.container {width:100%;max-width: 71.25rem; margin: auto;}
+.container {width:100%;max-width: 1140px; margin: auto;}
 address {font-style: normal;}
 
 /* Material-icons gère les symboles correspondant */
 .material-icons {
     font-family: 'Material Icons';
-    font-size: 1.5rem;  /* Preferred icon size*/
+    font-size: 24px;  /* Preferred icon size*/
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
       /* Support for IE. */
@@ -115,23 +115,23 @@ address {font-style: normal;}
 
 #top-header {
     align-items: center;
-    padding-top: 0.625rem;
+    padding-top: 10px;
 }
 
 .logo {
     font-family: var(--font-principale-black);
     font-size: var(--size-16);
-    letter-spacing: 0.0938rem;
+    letter-spacing: 1.5008px;
     text-transform: uppercase;
     color: var(--color-main);
     align-self: center;
-    margin-left: 0.9375rem;
+    margin-left: 15px;
 }
 
 /* taille et marge barre de navigation + recherche */
 .navbar-search { 
     width: 87.5%;
-    margin-top: 0.625rem;
+    margin-top: 10px;
 }
 
 /* Menu */
@@ -145,19 +145,19 @@ address {font-style: normal;}
 .menu li:first-child {display: none;} 
 .menu a:hover {
     font-family: var(--font-principale-bold);
-    font-size: 1.0625rem;
+    font-size: 17px;
     color: var(--color-main);
-    border: 0.125rem solid;
+    border: 2px solid;
     border-image: linear-gradient(to right, rgba(104,82,237,1), rgba(186,67,252,1))100% 0 0 0;
-    padding-top: 2.5625rem;
+    padding-top: 41px;
 }
 
 /* Barre de recherche */
 .search-bar {
-    width: 23.125rem;
-    height: 2.5rem;
-    border: 0.0625rem solid #D5D5D5;
-    border-radius: 1.5625rem;
+    width: 370px;
+    height: 40px;
+    border: 1px solid #D5D5D5;
+    border-radius: 25px;
 }
 .search {
     margin-left: 5%;
@@ -168,47 +168,47 @@ address {font-style: normal;}
     align-self: center;
     margin-right: 5%;
 }
-.search-bar img {margin-top: 0.3125rem;}
+.search-bar img {margin-top: 5px;}
 
 /* *****************************************************
 Debut section introduction
 ***************************************************** */
 #intro {
-    max-width: 27.25rem;
-    margin-top: 15.625rem;
-    margin-bottom: 20.625rem;
+    max-width: 436px;
+    margin-top: 250px;
+    margin-bottom: 330px;
     position: relative;
 }
 
 h2 {
     font-family: var(--font-secondary-bold);
-    font-size: 3.125rem;
-    line-height: 3.75rem;
+    font-size: 50px;
+    line-height: 60px;
     color: var(--color-main);
     font-weight: 100;
 
 }
 
-.intro-text {font-size: 1.375rem;}
+.intro-text {font-size: 22px;}
 
 .button-general {
-    width: 12.9375rem;
-    height: 3.125rem;
+    width: 207px;
+    height: 50px;
     background: rgb(104,82,237);
     background: var(--bck-gradient);
     display: block;
-    border-radius: 2.5rem;
+    border-radius: 40px;
     color: var(--color-white);
     font-family: var(--font-secondary-med);
     text-align: center;
-    line-height: 3.125rem;
-    letter-spacing: 0.0375rem;
+    line-height: 50px;
+    letter-spacing: 0.6px;
 }
 .intro-lien { 
-    line-height: 3.125rem;
+    line-height: 50px;
     font-family: var(--font-secondary);
     color: var(--color-main);
-    margin-left: 1.875rem;
+    margin-left: 30px;
 }
 #intro div, .community-service div{
     justify-content: flex-start;
@@ -216,15 +216,15 @@ h2 {
 
 /* grand rectangle en fond */
 #intro::before {
-    width: 42.0625rem;
-    height: 85.5625rem;
+    width: 673px;
+    height: 1369px;
     content:'';
     transform: rotate(44deg);
-    border-radius: 21.0313rem;
+    border-radius: 336.5008px;
     background-color: #6852ED;
     position: absolute;
-    top: -48.062rem;
-    right: -67.25rem;
+    top: -768.992px;
+    right: -1076px;
     z-index:-2;
 }
 /* *****************************************************
@@ -235,41 +235,41 @@ Fin section introduction
 Debut section offres
 ***************************************************** */
 #offres {
-    margin-bottom: 7.5rem;
+    margin-bottom: 120px;
 }
 #offres h2 {
-    font-size: 1.25rem;
+    font-size: 20px;
     margin-bottom: 0;
 }
 .option {
     width: 31.58%;
-    border-radius: 0.625rem;
-    box-shadow: 0 0 1.25rem 0 #E1E4ED;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #E1E4ED;
 }
 .mini-container {
     width: 64%;
-    margin: 3.75rem auto;
+    margin: 60px auto;
 }
 .best {
     display: block;
-    width: 5.375rem;
-    height: 1.625rem;
-    border-radius: 0.8125rem;
+    width: 86px;
+    height: 26px;
+    border-radius: 13px;
     float: right;
     background-color: rgba(225, 228, 237, 0.60);
     color: #EF7171;
     text-transform: uppercase;
-    font-size: 0.625rem;
-    letter-spacing: 0.0187rem;
+    font-size: 10px;
+    letter-spacing: 0.2992px;
     font-family: var(--font-secondary-bold);
     text-align: center;
-    line-height: 1.625rem;
+    line-height: 26px;
     margin-top: var(--size-16);
 
 }
 #offres hr {
-    width: 2.5rem;
-    height: 0.125rem;
+    width: 40px;
+    height: 2px;
     margin: 0;
     background-color: #BA43FC;
     border: none;
@@ -277,9 +277,9 @@ Debut section offres
 
 .price {
     font-family: var(--font-secondary-bold);
-    font-size: 3.125rem;
+    font-size: 50px;
     color: var(--color-main);
-    margin-top: 0.9375rem;
+    margin-top: 15px;
     margin-bottom: 0;
 }
 
@@ -289,17 +289,17 @@ Debut section offres
 }
 
 #offres .button-general {
-    width: 11.8125rem;
+    width: 189px;
 }
 .liste-options {
-    margin-top: 2.5rem;
-    padding-left: 1.875rem;
-    margin-bottom: 3.125rem;
+    margin-top: 40px;
+    padding-left: 30px;
+    margin-bottom: 50px;
 }
 .liste-options li a{
     color: var(--color-four);
     font-size: var(--size-18);
-    line-height: 2.25rem;
+    line-height: 36px;
 }
 .non {opacity: 80%;}
 /* *****************************************************
@@ -316,66 +316,66 @@ Debut section testimonial
 #testimonial {
     position: relative;
     overflow: hidden;
-    max-width: 120rem;
+    max-width: 1920px;
     margin: auto;
 }
 /* images ronde en fond */
 #testimonial::before {
-    width: 15.0625rem;
-    height: 15.0625rem;
+    width: 241px;
+    height: 241px;
     content:url('images/tete.png');
-    border-radius: 15.0625rem;
+    border-radius: 241px;
     background-color: hsla(225, 25%, 91%, 0.3);
     position: absolute;
-    bottom:-0.625rem;
-    left: -3.4375rem;
+    bottom:-10px;
+    left: -55px;
     opacity: 30%;
 }
 /* image rectangle diago en fond */
 #testimonial::after {
-    width: 22.5rem;
-    height: 56.25rem;
+    width: 360px;
+    height: 900px;
     content:url('images/corps.png');
-    border-radius: 11.25rem;
+    border-radius: 180px;
     position: absolute;
-    bottom: 7.0625rem;
-    right: 33.75rem;
+    bottom: 113px;
+    right: 540px;
     z-index:-2;
     opacity: 30%;
 }
 
 #review {
-    width: 46.875rem;
+    width: 750px;
     text-align: center;
-    padding-top: 6.25rem;
+    padding-top: 100px;
 }
 #review h2 {
-    font-size: 2.125rem;
-    margin-bottom: 0rem;
+    font-size: 34px;
+    margin-bottom: 0px;
 }
 .review-text {
-    margin-top: 0.625rem;
+    margin-top: 10px;
     font-size: var(--size-18);
-    line-height: 1.6875rem;
-    margin-bottom: 0.875rem;
+    line-height: 27px;
+    margin-bottom: 14px;
 }
 .circle {
-    width: 6.25rem;
-    height: 6.25rem;
-    border-radius: 6.25rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
     background-color: #6852ED;
     display: inline-block;
     margin-bottom: 0;
 }
 .author {
     font-family: var(--font-secondary-bold);
-    font-size: 1.25rem;
+    font-size: 20px;
     color: var(--color-main);
 }
 .job {
     color: var(--color-secondary);
     opacity: 80%;
-    margin-bottom: 4.6875rem;
+    margin-bottom: 75px;
 }
 /* *****************************************************
 Fin section testimonial
@@ -387,16 +387,16 @@ Début section services
 #services {
     font-size: var(--size-18);
     flex-direction: row-reverse;
-    margin-top: 7.5rem;
+    margin-top: 120px;
 }
 #services h2 {
-    font-size: 2.125rem;
-    line-height: 2.75rem;
+    font-size: 34px;
+    line-height: 44px;
     margin-top: 0;
 }
 
 .service-principal-text,.sec-text{
-    line-height: 1.6875rem;
+    line-height: 27px;
     color: var(--color-four);
 }
 .service-principal {
@@ -404,10 +404,10 @@ Début section services
     width: 29%;
 }
 .service-principal-text {
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
 }
 .service-principal .button-general {
-    width: 10.875rem;
+    width: 174px;
     margin-bottom: 0;
 }
 .service-principal p:last-child {
@@ -419,24 +419,24 @@ Début section services
 }
 .service-secondary section{
     width: 85%;
-    margin-bottom: 1.5625rem;
-    box-shadow: 0 0 1.25rem 0 #E1E4ED;
-    border-radius: 0.625rem;
-    padding-left: 1.875rem;
-    padding-bottom: 1.25rem;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px 0 #E1E4ED;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-bottom: 20px;
 }
 .service-secondary section h3 {
     color: var(--color-main);
     font-family: var(--font-secondary-bold);
-    font-size: 1.375rem;
-    padding-top: 5.1875rem;
+    font-size: 22px;
+    padding-top: 83px;
     font-weight: 100;
 }
 .service-secondary a {
     color: var(--color-four);
 }
 .audit {
-    margin-top: 2.5rem;
+    margin-top: 40px;
 }
 .sec-text {
     width: 85%;
@@ -444,7 +444,7 @@ Début section services
 /* partie pour le hover */
 .service-secondary section:hover {
     background: var(--bck-gradient);
-    box-shadow:0 0 1.25rem 0 rgba(105, 82, 237, 0.80);
+    box-shadow:0 0 20px 0 rgba(105, 82, 237, 0.80);
 } 
 .service-secondary section:hover h3,.service-secondary section:hover .sec-text, .service-secondary section:hover a{
     color: var(--color-white);
@@ -460,12 +460,12 @@ Fin section services
 Début section community
 ***************************************************** */
 #community {
-    margin: 7.5rem auto;
+    margin: 120px auto;
 }
 .photo {
-    width: 40.6875rem;
-    height: 29.625rem;
-    border-radius: 14.8125rem 14.8125rem 14.8125rem 5rem;
+    width: 651px;
+    height: 474px;
+    border-radius: 237px 237px 237px 80px;
     background-color: #E1E4ED;
     background: url('images/community.png') no-repeat;
 }
@@ -474,18 +474,18 @@ Début section community
     align-self: center;
 }
 .community-service h2 {
-    font-size: 2.125rem;
-    line-height: 2.75rem;
+    font-size: 34px;
+    line-height: 44px;
 }
 
 .community-service .button-general {
-    width: 10.375rem;
+    width: 166px;
 }
 
 .community-text {
     color: var(--color-four);
-    margin-bottom: 1.875rem;
-    line-height: 1.6875rem;
+    margin-bottom: 30px;
+    line-height: 27px;
 }
 /* *****************************************************
 Fin section services
@@ -497,17 +497,17 @@ Début Footer
 /* newletter */
 .newsletter {
     background-color: #6852ED;
-    border-radius: 0.625rem;
+    border-radius: 10px;
 }
 .newsletter div {
-    height: 6.875rem;
+    height: 110px;
 }
 #mail, #mail2 {
     background: transparent;
     border: none;
-    margin-left: 5rem;
+    margin-left: 80px;
     width: 30%;
-    font-size: 1.375rem;
+    font-size: 22px;
     color: var(--color-white);
     opacity: 70%;
 }
@@ -515,14 +515,14 @@ Début Footer
 .button-email {
     align-self: center;
     background: transparent;
-    border: 0.125rem solid #707070;
-    border-radius: 2.5rem;
-    width: 6.4375rem;
-    height: 3.125rem;
+    border: 2px solid #707070;
+    border-radius: 40px;
+    width: 103px;
+    height: 50px;
     color: var(--color-white);
     font-family: var(--font-secondary-med);
     font-size: var(--size-16);
-    margin-right: 1.875rem;
+    margin-right: 30px;
 }
 
 .button-email:hover {
@@ -532,23 +532,23 @@ Début Footer
 
 /* Footer description */
 .middle {
-    margin-top: 5rem;
+    margin-top: 80px;
     font-size: var(--size-18);
 }
 .middle h2 {
     font-family: var(--font-secondary-bold);
-    font-size: 1.25rem;
+    font-size: 20px;
     color: var(--color-main);
     font-weight: 100;
-    margin-top: 0.5625rem;
+    margin-top: 9px;
 }
 .about {
     width: 32%;
 }
 .footer-intro {
     color: var(--color-four);
-    line-height: 1.6875rem;
-    margin-top: 0.625rem;
+    line-height: 27px;
+    margin-top: 10px;
 }
 
 /* Contact info */
@@ -556,12 +556,12 @@ Début Footer
     width: 25%;
 }
 .contact ul {
-    margin-top: 1.3125rem;
+    margin-top: 21px;
 }
 
 .contact li {
-    line-height: 1.875rem;
-    margin-top: 0.3125rem;
+    line-height: 30px;
+    margin-top: 5px;
     color: var(--color-four);
 }
 .contact a {
@@ -576,14 +576,14 @@ Début Footer
     flex-direction: column;
     width: 68%;
     padding-left: 0;
-    margin-top: 0.5rem;
+    margin-top: 8px;
 }
 .link-sec {
     justify-content: flex-start;
 }
 .link li+li {
-    line-height: 1.6875rem;
-    margin-top: 0.625rem;
+    line-height: 27px;
+    margin-top: 10px;
 }
 
 .link a {
@@ -596,10 +596,10 @@ Début Footer
 
 /* Crédit  */
 .credit {
-    font-size: 0.875rem;
+    font-size: 14px;
     font-family: var(--font-secondary);
-    letter-spacing: 0.0089rem;
-    margin-top: 3.125rem;
+    letter-spacing: 0.1424px;
+    margin-top: 50px;
 }
 .template {
     font-family: var(--font-secondary-bold);
@@ -619,35 +619,36 @@ Fin Footer
 Début media queries
 ***************************************************** */
 
-@media only screen and (max-width :73.6875rem) {
+@media only screen and (max-width :1179px) {
     .menu {width: 60%;}
     .search-bar {width: 30%;}
-    #intro {margin: 9.375rem auto 18.75rem;} 
+    #intro {margin: 150px auto 300px;} 
 
     #intro::before {
-        top: -48.062rem;
-        right: -51.25rem;
-        opacity: 50%;
+        /* top: -768.992px;
+        right: -820px;
+        opacity: 50%; */
+        content: none;
     }
     .service-hover {display: block;}
     #offres {flex-direction: column;}
     .option {
         width: 50%;
-        margin:0 auto 3.125rem;
+        margin:0 auto 50px;
     }
-    .about {margin-left: 1.875rem;}
+    .about {margin-left: 30px;}
     .credit {text-align: center;}
 }
 
 
 
-@media  screen and (max-width:61.9931rem) {
-    #offres {margin-bottom: 3.125rem;}
+@media  screen and (max-width:991.8896px) {
+    #offres {margin-bottom: 50px;}
     .option {width: 60%;}
     #testimonial::before, .photo {
         display: none;
     }
-    #services {margin-top: 3.125rem;}
+    #services {margin-top: 50px;}
     .service-principal {
         width: 50%;
         margin: auto;
@@ -658,16 +659,16 @@ Début media queries
     .audit {margin-top: 0;}
     .sec-text{width: 76%;}
 
-    #community {margin-top: 1.875rem;margin-bottom: 3.75rem;}
+    #community {margin-top: 30px;margin-bottom: 60px;}
     .community-service {
         width: 80%;
-        margin: 0 auto 0rem;
+        margin: 0 auto 0px;
         text-align: center;
     }
     .community-service div {justify-content: center;}
 
     #mail {width: 60%;}
-    .middle {margin-top: 1.875rem;}
+    .middle {margin-top: 30px;}
     .wrap-tablette {flex-wrap: wrap;}
     .about{width: 100%;}
 
@@ -678,35 +679,35 @@ Début media queries
 
     .contact,.link {
         width: 40%;
-        margin: 3.125rem auto 0;
+        margin: 50px auto 0;
     }
 }
 
 
-@media screen and (max-width:47.9988rem) {
+@media screen and (max-width:767.9808px) {
 
     #top-header, .navbar-search {flex-direction: column;}
     .menu ul {padding-left: 0;}
     .menu {width: 100%;}
     .menu a:hover {border: none;}
-    .search-bar {align-self: center;margin-top: 1.25rem;}
-    #intro::before{right: -42.75rem;top: -55.062rem;}
+    .search-bar {align-self: center;margin-top: 20px;}
+    /* #intro::before{right: -684px;top: -880.992px;} */
     #intro{
         text-align: center;
-        margin: 5.375rem auto 7.75rem;
+        margin: 86px auto 124px;
     }
     #intro div {justify-content: center;}
 
     #review {width: 90%;}
 
-    .sec {margin: 1.25rem auto 0;
+    .sec {margin: 20px auto 0;
     flex-direction: column;}
     .service-secondary section{
         box-sizing: border-box;
         width: 100%;
     }
     .audit h3{margin-top: 0;}
-    #mail {margin-left: 3.125rem;}
+    #mail {margin-left: 50px;}
 
     .contact, .link h2{
         width: 100%;
@@ -720,13 +721,13 @@ Début media queries
         width: 60%;
         margin: auto;
     }
-    .link-sec a{padding-left: 5rem;}
+    .link-sec a{padding-left: 80px;}
 }
 
-@media screen and (max-width:29.9988rem){ 
+@media screen and (max-width:479.9808px){ 
     .wrap-mobile {flex-wrap: wrap;}
     #top-header {flex-direction: row;}
-    .menu li:first-child {display: block;margin-right: 1.875rem;}
+    .menu li:first-child {display: block;margin-right: 30px;}
     .search-bar, .menu li:not(:first-child) {display: none;}
 
     .menu ul {justify-content: flex-end;}
